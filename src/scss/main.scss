@@ -1,0 +1,21 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  visibility: hidden;
+}
+
+.header_btn {
+  width: 161px;
+  height: 40px;
+  color: #1071FF;
+  background-color: white;
+}

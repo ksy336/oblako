@@ -1,0 +1,21 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass src/scss -o src/css"
+  },
+  "keywords": [],
+  "author": "Klimova Kseniiya",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "normalize-css": "^2.3.1",
+    "normalize.css": "^8.0.1",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "devDependencies": {}
+}
