@@ -3,14 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900" rel="stylesheet">
     <title>Head of trainers</title>
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
 <header class="header">
-    <div class="main-container">
-        <button class="header_btn">Запланировать</button>
+    <div class="header__wrapper">
+        <div class="main-container">
+            <div><img class="header__burger-menu" src="../assets/icon-enabled.svg" alt=""></div>
+            <button class="header__btn"><img class="header__plus" src="../assets/icon.svg" alt="it's photo to click">  Запланировать</button>
+        </div>
+        <span class="header__main">Главная -- Планирование</span>
+        <h2 class="header__plan"><img class="header__plan-img" src="../assets/Union.svg" alt="it's plan image">Планирование</h2>
     </div>
+
 </header>
+<section class="main-section">
+    <span class="section__group">Групповое</span> <span class="section__individ">Индивидуальное</span>
+    <hr>
+    <img class="header__hr" src="../assets/blue.svg" alt="it's blue line">
+</section>
+<section class="input-section">
+    <label class="search">
+        <img src="../assets/search.svg" alt="it's search item"><input class="search__input" type="text" placeholder="Поиск">
+        <div><img class="input-section__line" src="../assets/line.svg" alt="it's line"></div>
+    </label>
+    <ul class="schedule">Программа
+        <li>
+            <div class="select">Все<img class="select__img" src="../assets/expand.svg" alt="it's row"></div>
+            <div><img class="input-section__line" src="../assets/line.svg" alt="it's line"></div>
+        </li>
+    </ul>
+
+    <ul class="schedule">Период
+        <li>
+            <div class="select">Июнь 2019<img class="select__img" src="../assets/expand.svg" alt="it's row"></div>
+            <div><img class="input-section__line" src="../assets/line.svg" alt="it's line"></div>
+        </li>
+    </ul>
+    <ul class="schedule">Статус
+        <li>
+            <div class="select">Все<img class="select__img" src="../assets/expand.svg" alt="it's row"></div>
+            <div><img class="input-section__line" src="../assets/line.svg" alt="it's line"></div>
+        </li>
+    </ul>
+</section>
+
+<section class="main-info">
+    <span class="main-info__sessions">34 сессии</span>
+    <img class="main-info__img" src="../assets/setting.svg" alt="it's a sign"><span class="main-info__filter">Настроить фильтр</span>
+    <img class="main-info__img"  src="../assets/Close.svg" alt="it's close sign"><span class="main-info__reset">Сбросить</span>
+</section>
+<section>
+   <div class="first-row">
+       <span class="first-row__item">Дата начала</span><span class="first-row__item">Название</span><span class="first-row__item">Участников</span>
+       <span class="first-row__item">Тренер</span>
+       <span class="first-row__item">Прогресс</span><img class="first-row__up" src="../assets/up.svg" alt="it's up row">
+   </div>
+</section>
+<section class="section-grid">
+        <div class="">
+            <div class="second-row__item">23 дек, 9:00</div>
+            <div class="second-row__item">14 ноя, 9:30</div>
+            <div class="second-row__item">19 окт, 14:30</div>
+            <div class="second-row__item">10 окт, 16:00</div>
+            <div class="second-row__item">5 окт, 15:00</div>
+            <div class="second-row__item">27 сен, 11:00</div>
+        </div>
+        <div class="">
+            <div class="second-row__item">Страхование с заботой о клиенте</div>
+            <div class="second-row__item">Главные правила продаж</div>
+            <div class="second-row__item">Первичное обучение КС</div>
+            <div class="second-row__item">Вторичное обучение КС</div>
+            <div class="second-row__item">Вклады: теория и практика</div>
+            <div class="second-row__item">Очное обучение менеджеров</div>
+        </div>
+        <div class="">
+            <div class="second-row__item">12</div>
+            <div class="second-row__item">10</div>
+            <div class="second-row__item">8</div>
+            <div class="second-row__item">18</div>
+            <div class="second-row__item">6</div>
+            <div class="second-row__item">20</div>
+
+        </div>
+        <div class="">
+            <div class="second-row__item"></div>
+            <div class="second-row__item"></div>
+            <div class="second-row__item"></div>
+            <div class="second-row__item"></div>
+            <div class="second-row__item"></div>
+            <div class="second-row__item"></div>
+        </div>
+        <div class="">
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                                           alt="it's circle">92
+                <button class="pressed-btn"><img src="../assets/pressed.svg" alt="it's button"></button>
+            </div>
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                                alt="it's circle">92</div>
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                               alt="it's circle">86</div>
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                               alt="it's circle">82</div>
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                               alt="it's circle">79</div>
+            <div class="second-row__item"><img class="second-row__circle" src="../assets/circle.svg"
+                                               alt="it's circle">73</div>
+        </div>
+
+    </div>
+</section>
+
+<div class="popup-wrapper popup-event">
+    <div class="event-popup">
+        <div class="popup-container">
+            <h2 class="popup__plan">Планирование</h2>
+            <img class="popup__row" src="../assets/row.svg" alt="it's photo">
+            <button class="btn__close"><img class="popup__close" src="../assets/Close.svg" alt="it's close"></button>
+        </div>
+        <div class="popup__main">
+            <div class="main-item">Основное</div> <div class="main-part">Участники</div>
+            <hr class="popup__line">
+            <img class="popup__hr" src="../assets/blue.svg" alt="it's blue line">
+        </div>
+        <div class="main-content">
+            <div class="popup-prog">
+                <div class="popup__program">Программа</div>
+                <div class="popup-insurance">Страхование с заботой о клиенте</div>
+                <hr class="popup__line1">
+            </div>
+            <h3>Мероприятие, дата и время проведения</h3>
+            <div class="popup__event">Мероприятие</div>
+            <div class="popup__train">Главные правила продаж  Тренинг</div>
+            <hr class="popup__lines">
+            <div class="flex-table">
+                <div class="flex-cell"><img src="../assets/Icon1.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div>Дата</div>
+                        <div class="item-date"> 28 ноября</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="close-item"><img class="close__img" src="../assets/Close.svg" alt="it's close sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Time.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div>Время</div>
+                        <div class="item-date"> 09:00</div>
+                        <img class="item-lines" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="close-item"><img class="close__img" src="../assets/Close.svg" alt="it's close sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Icon1.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div>Тренер</div>
+                        <div class="item-date"> Сергей Ефремов</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="close-item"><img class="close__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+            </div>
+            <div class="popup__events">Мероприятие</div>
+            <div class="popup__train">Страхование без потерь  Тренинг</div>
+            <hr class="popup__lines">
+
+            <div class="flex-table">
+                <div class="flex-cell"><img src="../assets/Icon1.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Дата</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Time.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Время</div>
+                        <img class="item-lines" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Man%20placeholder%2002.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Тренер</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+            </div>
+            <div class="popup__events">Мероприятие</div>
+            <div class="popup__train">Страховой случай или как помочь клиенту   Тренинг</div>
+            <hr class="popup__lines">
+
+            <div class="flex-table">
+                <div class="flex-cell"><img src="../assets/Icon1.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Дата</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Time.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Время</div>
+                        <img class="item-lines" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+
+                <div class="flex-cell"><img src="../assets/Man%20placeholder%2002.svg" alt="it's icon">
+                    <div class="flex-cell__item">
+                        <div class="cell-text">Тренер</div>
+                        <img class="item-line" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="expand-item"><img class="expand__img" src="../assets/expand.svg" alt="it's expand sign"></div>
+            </div>
+            <h3 class="popup__condition">Условия записи по коду</h3>
+            <div>
+                <form class="popup-input" action="">
+                    <input  type="radio" id="popup" value="Не использовать код доступа">
+                    <label class="popup-input__cells" for="popup">Не использовать код доступа</label><br>
+                    <input  type="radio" id="register">
+                    <label class="popup-input__cell" for="register">Требовать регистрацию</label><br>
+                    <input  type="radio" id="request">
+                    <label class="popup-input__cell" for="request">Запросить только имя и фамилию</label><br>
+                    <input type="radio" id="name">
+                    <label class="popup-input__cell" for="name">Не требовать регистрацию, имя и фамилию</label> <br>
+                </form>
+            </div>
+        </div>
+        <div class="main-participants">
+            <div class="container">
+                <div class="item-participants">
+                    <h3>Доступные участники</h3>
+                </div>
+
+                <div class="container__search-item">
+                    <div class="container__search">
+                        <img src="../assets/search.svg" alt="it's search item"><input class="search__item" type="text" placeholder="Поиск">
+                        <img class="item-image" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                    <div class="container__group">
+                        <div class="group-item">Группа</div>
+                        <div class="group-admin">Администрирование <img class="container-image" src="../assets/expand.svg" alt="it's expand sign"></div>
+                        <img class="item-image" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="occupation">
+                    <div class="container__occupation">
+                        <div class="item-occupation">Должность</div>
+                        <div class="item-manager">Менеджер по персон...<img class="container-image" src="../assets/expand.svg" alt="it's expand sign"></div>
+                        <img class="item-image" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                    <div class="container__years">
+                        <div class="item-years">Стаж</div>
+                        <div class="amount-years">3 – 10 лет<img class="container-image" src="../assets/expand.svg" alt="it's expand sign"></div>
+                        <img class="item-image" src="../assets/slimLine.svg" alt="it's line">
+                    </div>
+                </div>
+                <div class="container__settings">
+                    <div>42 пользователя</div>
+                   <div><img class="setting-item" src="../assets/setting.svg" alt="it's settings image"><span>Настроить</span></div>
+                    <div><img class="setting-item" src="../assets/Close.svg" alt="it's reset photo"><span>Сбросить</span></div>
+                </div>
+                <div class="container-input">
+                    <form class="form-participants" action="">
+                        <input class="all-users" type="checkbox" id="users">
+                        <label for="users">Все пользователи</label> <br>
+                        <input class="input-names" type="checkbox" id="names">
+                        <label for="names">Максим Вильниц</label> <br>
+                        <input class="input-names" type="checkbox" id="olga">
+                        <label for="olga">Ольга Крышкова</label><br>
+                        <input class="input-names" type="checkbox" id="yulia">
+                        <label for="yulia">Юлия Грунина</label><br>
+                        <input class="input-names" type="checkbox" id="marat">
+                        <label for="marat">Марат Большаков</label><br>
+                        <input class="input-names" type="checkbox" id="svetlana">
+                        <label for="svetlana">Светлана Иванова</label><br>
+                        <input class="input-names" type="checkbox" id="danil">
+                        <label for="danil">Данил Горбунов</label><br>
+                        <input class="input-names" type="checkbox" id="darya">
+                        <label for="darya">Дарья Васильева</label><br>
+                    </form>
+                </div>
+            </div>
+            <div class="container-extend">
+                <div class="item-realparticipants">
+                    <h3>Участники мероприятия</h3>
+                </div>
+                <div class="container-input__real">
+                    <form class="form-real" action="">
+                        <input class="all-users" type="checkbox" id="user">
+                        <label for="user">Все пользователи</label> <br>
+                        <input class="input-names" type="checkbox" id="naming">
+                        <label for="naming">Максим Вильниц</label><br>
+                        <input class="input-names" type="checkbox" id="olg">
+                        <label for="olg">Ольга Крышкова</label><br>
+                        <input class="input-names" type="checkbox" id="yuli">
+                        <label for="yuli">Юлия Грунина</label><br>
+                        <input class="input-names" type="checkbox" id="mara">
+                        <label for="mara">Марат Большаков</label><br>
+                        <input class="input-names" type="checkbox" id="svetlan">
+                        <label for="svetlan">Светлана Иванова</label><br>
+                        <input class="input-names" type="checkbox" id="dani">
+                        <label for="dani">Данил Горбунов</label><br>
+                        <input class="input-names" type="checkbox" id="dary">
+                        <label for="dary">Дарья Васильева</label><br>
+                        <input class="input-names" type="checkbox" id="vladimir">
+                        <label for="vladimir">Владимир Силеванов</label><br>
+                        <input class="input-names" type="checkbox" id="andrei">
+                        <label for="andrei">Андрей Ерохин</label><br>
+                        <input class="input-names" type="checkbox" id="tatiana">
+                        <label for="tatiana">Татьяна Костина</label><br>
+                        <input class="input-names" type="checkbox" id="matvei">
+                        <label for="matvei">Матвей Самсонов</label><br>
+                        <input class="input-names" type="checkbox" id="anastasia">
+                        <label for="anastasia">Анастасия Горынкина</label><br>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./src/js/main.js"></script>
 </body>
 </html>
